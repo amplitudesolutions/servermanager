@@ -17,7 +17,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set the static files location /public/img will be /img for users
 app.use(express.static(__dirname + '/public')); 
 
-var port = process.env.PORT;
+var port = process.env.PORT || 8080;
 
 var router = express.Router();
 
